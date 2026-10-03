@@ -1,0 +1,59 @@
+{
+  "name": "Vivek Nilapalle",
+  "shortName": "Vivek",
+  "role": "Aspiring Data Analyst & Machine Learning Engineer",
+  "tagline": "Python · SQL · Power BI · Machine Learning",
+  "intro": "I turn raw datasets into analysis people can act on — SQL deep-dives into product inventory, interactive Power BI dashboards, and machine-learning apps like a content-based movie recommender built with scikit-learn and Streamlit.",
+  "summary": "Aspiring Data Scientist skilled in Python, SQL, Machine Learning, Deep Learning and NLP, focused on building data-driven solutions to real-world analytical problems.",
+  "availability": "Open to Data Analytics, Business Analytics & Data Science roles",
+  "location": "Maharashtra, India",
+  "email": "nilapallevivek@gmail.com",
+  "phone": "+91 90221 37035",
+  "siteUrl": "https://viveknilapalle.vercel.app",
+  "resume": "/resume/vivek-nilapalle-resume.pdf",
+  "image": "/images/profile.png",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/viveknilapalle", "icon": "github", "handle": "viveknilapalle" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/viveknilapalle", "icon": "linkedin", "handle": "in/viveknilapalle" }
+  ],
+  "focus": [
+    {
+      "title": "SQL analytics",
+      "description": "Cleaning and modelling relational data in MySQL, then answering business questions with CTEs, window functions and ranking queries.",
+      "icon": "database",
+      "technologies": ["SQL", "MySQL"]
+    },
+    {
+      "title": "BI dashboards",
+      "description": "Interactive Power BI reports with DAX measures, KPI cards and slicers that let stakeholders explore sales and performance on their own.",
+      "icon": "chart",
+      "technologies": ["Power BI", "DAX", "Excel"]
+    },
+    {
+      "title": "Machine learning apps",
+      "description": "End-to-end ML work — preprocessing, feature engineering and modelling with scikit-learn and NLTK — shipped as usable Streamlit apps.",
+      "icon": "cpu",
+      "technologies": ["Python", "Scikit-learn", "NLTK", "Streamlit"]
+    }
+  ],
+  "about": {
+    "headline": "Using data to uncover insights and support better decisions.",
+    "paragraphs": [
+      "I am an aspiring Data Analyst passionate about using data to uncover insights and support informed decision-making. My toolkit is built around Python, SQL, Excel, Power BI and Machine Learning, with a focus on solving real-world analytical problems.",
+      "I have built practical projects in data analytics and machine learning, including a Movie Recommendation System, SQL analytics projects and interactive dashboards. Through them I have gained hands-on experience in data preprocessing, visualization, statistical analysis and predictive modelling.",
+      "I am currently seeking opportunities in Data Analytics, Business Analytics and Data Science where I can apply these skills, contribute to impactful projects and keep growing as a data professional."
+    ],
+    "interests": [
+      "Exploratory data analysis",
+      "Business & product analytics",
+      "Dashboard design",
+      "Recommender systems",
+      "Natural language processing"
+    ],
+    "learning": [
+      { "title": "Deep Learning", "detail": "ANN, CNN and RNN architectures with TensorFlow and Keras." },
+      { "title": "Natural Language Processing", "detail": "Text preprocessing and vectorisation with NLTK." },
+      { "title": "Statistics for Data Science", "detail": "Statistical foundations for analysis and business decisions." }
+    ]
+  }
+}

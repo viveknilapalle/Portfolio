@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      # Source code from the host, for hot reload.
+      - .:/app
+      # Container-only dependencies and build cache (never the host's copies).
+      - node_modules:/app/node_modules
+      - next_cache:/app/.next
+    environment:
+      # File events don't cross Docker Desktop bind mounts reliably; poll instead
+      # (read by next.config.ts).
+      NEXT_WATCH_POLL_INTERVAL_MS: "1000"
+
+volumes:
+  node_modules:
+  next_cache:

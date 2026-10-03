@@ -1,0 +1,10 @@
+{
+  "username": "viveknilapalle",
+  "featured": [
+    "Movie_Recommender_System",
+    "Zepto_SQL_Analytics",
+    "Blinkit_Sales_Analytics_Dashboard",
+    "Student-Placement-Prediction-"
+  ],
+  "exclude": ["viveknilapalle", "webfeed"]
+}

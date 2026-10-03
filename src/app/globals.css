@@ -1,0 +1,208 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*
+ * Design tokens. The palette is carried over from the original portfolio
+ * (primary #6c63ff, accent #ff6584, base #0f0f1a, navy cards #16213e) and
+ * extended with tints that meet WCAG AA contrast for text on the dark base.
+ */
+@theme {
+  --color-base: #0b0b16;
+  --color-base-2: #0f0f1a;
+  --color-surface: #13152a;
+  --color-surface-2: #181b36;
+  --color-navy: #16213e;
+
+  --color-primary: #6c63ff;
+  --color-primary-dark: #574fd6;
+  --color-primary-soft: #a29dff;
+  --color-accent: #ff6584;
+  --color-accent-soft: #ff8aa2;
+
+  --color-fg: #ececf4;
+  --color-fg-2: #c4c4d4;
+  --color-muted: #a0a0b4;
+  --color-line: rgb(150 145 255 / 0.14);
+  --color-line-strong: rgb(150 145 255 / 0.28);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), var(--font-inter), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-enter: enter 0.6s var(--ease-out-soft) both;
+  --animate-page: page 0.4s var(--ease-out-soft) both;
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
+
+  @keyframes enter {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes page {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgb(74 222 128 / 0.5); }
+    50% { box-shadow: 0 0 0 5px rgb(74 222 128 / 0); }
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p { text-wrap: pretty; }
+
+  ::selection { background: rgb(108 99 255 / 0.45); color: #fff; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary-soft);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--color-base); }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(108 99 255 / 0.35);
+    border: 3px solid var(--color-base);
+    border-radius: 999px;
+  }
+
+  [id] { scroll-margin-top: 6rem; }
+}
+
+@layer components {
+  /* Gradient text — the signature purple → pink of the original site. */
+  .text-gradient {
+    background-image: linear-gradient(120deg, var(--color-primary-soft) 0%, var(--color-primary) 40%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* 1px gradient border that only "lights up" on interaction. */
+  .gradient-border {
+    position: relative;
+    isolation: isolate;
+  }
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgb(162 157 255 / 0.55), rgb(108 99 255 / 0.1) 40%, rgb(255 101 132 / 0.45));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: var(--border-opacity, 0.6);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Faint engineering grid, faded out at the edges. */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(150 145 255 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(150 145 255 / 0.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
+  }
+
+  .glow-primary {
+    background: radial-gradient(closest-side, rgb(108 99 255 / 0.28), transparent);
+  }
+  .glow-accent {
+    background: radial-gradient(closest-side, rgb(255 101 132 / 0.18), transparent);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary-soft);
+  }
+}
+
+
+/*
+ * Long-form Markdown (case-study implementation notes and posts). Kept outside
+ * @layer so these overrides beat the typography plugin defaults.
+ */
+.prose-portfolio {
+  --tw-prose-body: var(--color-fg-2);
+  --tw-prose-headings: var(--color-fg);
+  --tw-prose-lead: var(--color-fg-2);
+  --tw-prose-links: var(--color-primary-soft);
+  --tw-prose-bold: var(--color-fg);
+  --tw-prose-counters: var(--color-primary-soft);
+  --tw-prose-bullets: var(--color-primary);
+  --tw-prose-hr: var(--color-line);
+  --tw-prose-quotes: var(--color-fg);
+  --tw-prose-quote-borders: var(--color-primary);
+  --tw-prose-captions: var(--color-muted);
+  --tw-prose-code: var(--color-fg);
+  --tw-prose-pre-code: var(--color-fg);
+  --tw-prose-pre-bg: var(--color-surface);
+  --tw-prose-th-borders: var(--color-line-strong);
+  --tw-prose-td-borders: var(--color-line);
+}
+.prose-portfolio :where(h2, h3) { position: relative; }
+.prose-portfolio .heading-anchor {
+  margin-left: 0.4em;
+  color: var(--color-primary);
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.prose-portfolio :where(h2, h3):hover .heading-anchor { opacity: 1; }
+.prose-portfolio :where(code):not(:where(pre code)) {
+  background: rgb(108 99 255 / 0.14);
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
+  padding: 0.1em 0.4em;
+  font-weight: 500;
+}
+.prose-portfolio :where(code):not(:where(pre code))::before,
+.prose-portfolio :where(code):not(:where(pre code))::after { content: none; }
+.prose-portfolio pre {
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  font-size: 0.85rem;
+}
+.prose-portfolio table { display: block; overflow-x: auto; font-size: 0.9rem; }
+.prose-portfolio thead th { color: var(--color-fg); }
+.prose-portfolio a { text-underline-offset: 3px; }
+.prose-portfolio td code { white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

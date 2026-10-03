@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "id": "languages",
+      "title": "Languages",
+      "description": "Day-to-day languages for analysis and querying.",
+      "items": ["Python", "SQL"]
+    },
+    {
+      "id": "data-analysis",
+      "title": "Data Analysis",
+      "description": "Getting messy data into shape and asking it the right questions.",
+      "items": ["Pandas", "NumPy", "EDA", "Data Cleaning", "Feature Engineering"]
+    },
+    {
+      "id": "visualization",
+      "title": "Visualization & BI",
+      "description": "Communicating results to people who need to act on them.",
+      "items": ["Power BI", "DAX", "Excel", "Matplotlib", "Seaborn"]
+    },
+    {
+      "id": "machine-learning",
+      "title": "Machine Learning",
+      "description": "Classical ML for prediction, grouping and recommendation.",
+      "items": ["Scikit-learn", "Regression", "Classification", "Clustering", "Cosine Similarity"]
+    },
+    {
+      "id": "deep-learning",
+      "title": "Deep Learning",
+      "description": "Neural-network fundamentals.",
+      "items": ["TensorFlow", "Keras", "ANN", "CNN", "RNN"]
+    },
+    {
+      "id": "nlp",
+      "title": "NLP",
+      "description": "Turning text into features.",
+      "items": ["NLTK", "Text Preprocessing", "CountVectorizer"]
+    },
+    {
+      "id": "databases",
+      "title": "Databases",
+      "description": "Relational storage and querying.",
+      "items": ["MySQL", "MySQL Workbench"]
+    },
+    {
+      "id": "apps",
+      "title": "Apps & Web",
+      "description": "Putting models and data behind an interface.",
+      "items": ["Streamlit", "Flask", "Django", "HTML", "CSS"]
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "description": "Where the work happens.",
+      "items": ["Jupyter Notebook", "Google Colab", "Git", "GitHub", "VS Code"]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "work": [],
+  "education": [
+    {
+      "institution": "Government College of Engineering, Jalgaon",
+      "credential": "Bachelor of Technology — Computer Science & Engineering",
+      "short": "B.Tech, Computer Science",
+      "start": "2022",
+      "end": "2026",
+      "score": "CGPA 8.37"
+    },
+    {
+      "institution": "Dayanand Science College, Latur",
+      "credential": "Intermediate (HSC) — Physics, Chemistry, Mathematics",
+      "start": "2019",
+      "end": "2021",
+      "score": "96.83%"
+    },
+    {
+      "institution": "Maharashtra State Board",
+      "credential": "Secondary School Certificate (SSC)",
+      "start": "2018",
+      "end": "2019",
+      "score": "92.00%"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Python for Data Science",
+      "issuer": "NPTEL"
+    },
+    {
+      "name": "Introduction to Machine Learning",
+      "issuer": "NPTEL"
+    },
+    {
+      "name": "Deep Learning",
+      "issuer": "NPTEL"
+    },
+    {
+      "name": "Statistics for Data Science and Business Analysis",
+      "issuer": "Udemy"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "title": "Student Placement Prediction",
+      "description": "Machine-learning placement predictor with an end-to-end pipeline — from training in scikit-learn to a Flask web interface.",
+      "type": "ML experiment",
+      "technologies": ["Python", "Scikit-learn", "Flask", "Bootstrap"],
+      "repo": "https://github.com/viveknilapalle/Student-Placement-Prediction-",
+      "date": "2026-08"
+    },
+    {
+      "title": "Netflix Content Dashboard",
+      "description": "Power BI report exploring Netflix's catalogue: content distribution, ratings, directors, release trends and yearly additions.",
+      "type": "Dashboard",
+      "technologies": ["Power BI"],
+      "repo": "https://github.com/viveknilapalle/Netflix-PowerBI-Dashboard",
+      "date": "2026-08"
+    },
+    {
+      "title": "Mall Customer Analysis",
+      "description": "EDA on mall customer demographics, annual income and spending behaviour, wrapped in an interactive dashboard.",
+      "type": "Analysis",
+      "technologies": ["Python", "Pandas", "EDA"],
+      "repo": "https://github.com/viveknilapalle/Mall-Customer-Data-Analysis",
+      "date": "2026-07"
+    },
+    {
+      "title": "Titanic Survival EDA",
+      "description": "Exploratory analysis of Titanic passenger data to identify the factors that most affected survival.",
+      "type": "Analysis",
+      "technologies": ["Python", "Pandas", "EDA"],
+      "repo": "https://github.com/viveknilapalle/Titanic_Data_Annalysis",
+      "date": "2026-07"
+    },
+    {
+      "title": "Spotify Tracks Analysis",
+      "description": "Exploring trends and audio features in Spotify track data through Python visualisations.",
+      "type": "Analysis",
+      "technologies": ["Python", "Matplotlib"],
+      "repo": "https://github.com/viveknilapalle/Spotify_Tracks_Analysis",
+      "date": "2026-05"
+    },
+    {
+      "title": "Python Mini Projects",
+      "description": "Small programs for practising fundamentals, logic building and problem solving.",
+      "type": "Practice",
+      "technologies": ["Python"],
+      "repo": "https://github.com/viveknilapalle/python-mini-projects",
+      "date": "2026-01"
+    },
+    {
+      "title": "Pixogram",
+      "description": "An Instagram-inspired social app built to understand the Django framework end-to-end, backed by MySQL.",
+      "type": "Web app",
+      "technologies": ["Python", "Django", "MySQL", "Bootstrap"],
+      "repo": "https://github.com/viveknilapalle/Pixogram",
+      "date": "2025-10"
+    },
+    {
+      "title": "Multipurpose Web App",
+      "description": "Three tools in one Django app: a to-do list, a weather lookup and a chatbot.",
+      "type": "Web app",
+      "technologies": ["Python", "Django", "HTML", "CSS", "Bootstrap"],
+      "repo": "https://github.com/viveknilapalle/MultipurposeApplcation",
+      "date": "2025-08"
+    },
+    {
+      "title": "Cara Clothing Store",
+      "description": "Responsive storefront UI with product listings and smooth navigation, built without frameworks.",
+      "type": "Web app",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "repo": "https://github.com/viveknilapalle/CaracCothing",
+      "date": "2025-08"
+    }
+  ]
+}
